@@ -1,0 +1,24 @@
+models/sqrt_0.1中的style_weight_0.1.ckpt的参数效果还不错，使用的模型中的loss function是：
+content_loss = tf.reduce_mean(tf.sqrt(tf.reduce_sum(tf.square(enc_gen - target_features), axis=[1, 2])))
+l2_mean  = tf.sqrt(tf.reduce_sum(tf.square(meanG - meanS)))
+l2_sigma = tf.sqrt(tf.reduce_sum(tf.square(sigmaG - sigmaS)))
+并且已经罗列出了几种效果还不错的style，如：
+bijiasuo_shu
+bishaluo
+dali_zhong
+lion
+menglong_cunluo
+menglong
+miluo
+mosaic
+udnie
+woman_matisse
+xiangrikui
+xingkong
+zhongguohua-xia
+但是对大头照的效果不是很好，所以在其他条件都不变的情况下加入了动漫头像，希望能产生更好的效果。
+以上参数，style_pic等文件已经拷贝到U盘中，目录为F:\model\arbitrary_style_transfer-master(origin)
+会上传到百度云盘中
+						——by0319，效果要20号才能看到
+
+

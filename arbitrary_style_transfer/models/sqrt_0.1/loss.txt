@@ -1,0 +1,6 @@
+lambda = 0.1
+
+l2_mean  = tf.sqrt(tf.reduce_sum(tf.square(meanG - meanS)))
+l2_sigma = tf.sqrt(tf.reduce_sum(tf.square(sigmaG - sigmaS)))
+
+content_loss = tf.reduce_mean(tf.sqrt(tf.reduce_sum(tf.square(enc_gen - target_features), axis=[1, 2])))
